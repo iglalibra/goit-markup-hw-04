@@ -57,6 +57,9 @@ button {
 
 .header {
   border-bottom: 1px solid var(--border-color);;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -113,7 +116,16 @@ button {
 /*main*/
 .main-title-box {
   background-color: var(--primary-color);
+  max-width: 1440px;
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+  rgba(46, 47, 66, 0.7)), 
+  url(../images/studio/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -137,6 +149,7 @@ button {
   letter-spacing: 0.04em;
   color: var(--total-white);
   background-color: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -206,7 +219,9 @@ button {
 .member-card {
   background-color: var(--total-white); 
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .member-card-content {
@@ -251,6 +266,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
   padding: 12px 24px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 2px 1px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter:hover,
@@ -259,6 +277,13 @@ button {
   background-color: var(--ocean);
   color: var(--total-white);
   border: 1px solid transparent;
+}
+
+.project:hover,
+.project:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-name {
@@ -358,3 +383,10 @@ button {
   border: 1px solid var(--border-color);
   border-top-style: none;
 }
+
+/* Customer section */
+
+.customers-section {
+  padding: 120px 0;
+}
+
