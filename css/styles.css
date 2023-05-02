@@ -326,8 +326,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   padding: 12px 24px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 
 .filter:hover,
@@ -335,15 +334,17 @@ button {
 .filter:focus {
   background-color: var(--ocean);
   color: var(--total-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
 }
 
-.project {
+.project-link {
   display: block;  
 }
 
-.project:hover,
-.project:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
