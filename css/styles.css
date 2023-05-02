@@ -5,8 +5,9 @@
   --cloud: #f4f4fd;
   --iris: #4d5ae5;
   --ocean: #404bbf;
-  --border-color: #E7E9FC;
-  --customers-color: #8E8F99;
+  --border-color: #e7e9fc;
+  --customers-color: #8e8f99;
+  --footer-social-icon-hover-color: #31d0aa;
 }
 
 body {
@@ -16,10 +17,15 @@ body {
   background-color: var(--total-white);
 }
 
-
 /*reset*/
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -57,10 +63,9 @@ button {
 /*header*/
 
 .header {
-  border-bottom: 1px solid var(--border-color);;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -119,9 +124,11 @@ button {
   background-color: var(--primary-color);
   max-width: 1440px;
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-  rgba(46, 47, 66, 0.7)), 
-  url(../images/studio/hero-bg.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/studio/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -155,7 +162,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   min-width: 169px;
-  padding: 16px 32px;  
+  padding: 16px 32px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -172,7 +179,7 @@ button {
   letter-spacing: 0.02em;
   line-height: calc(24 / 20);
   color: var(--primary-color);
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
 }
 
 .feature-icon-box {
@@ -200,7 +207,7 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color);
-  margin-bottom: 72px;  
+  margin-bottom: 72px;
 }
 
 .team-section {
@@ -228,11 +235,10 @@ button {
 }
 
 .member-card {
-  background-color: var(--total-white); 
+  background-color: var(--total-white);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .member-card-content {
@@ -263,18 +269,48 @@ button {
   letter-spacing: 0.02em;
 }
 
+.footer-position {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-content-wrapper {
-  display: inline-block;
   margin-right: 120px;
 }
 
-/* .footer-social-media {
-  display: inline-block;
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--total-white);
+  margin-bottom: 16px;
 }
 
-.footer-sm {
-  display: inline-block;
-} */
+.contact-list-footer {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  color: var(--cloud);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-social-icon-hover-color);
+}
 
 /*portfolio*/
 
@@ -290,9 +326,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   padding: 12px 24px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-  0px 2px 1px rgba(0, 0, 0, 0.08), 
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter:hover,
@@ -305,9 +340,8 @@ button {
 
 .project:hover,
 .project:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-name {
@@ -353,7 +387,7 @@ button {
   display: flex;
 }
 
-.header-adress-list>:first-child {
+.header-adress-list > :first-child {
   margin-right: 40px;
 }
 
@@ -363,7 +397,7 @@ button {
 
 .main-section-list {
   display: flex;
-  gap: 24px;  
+  gap: 24px;
 }
 
 .feature-item {
@@ -394,7 +428,7 @@ button {
 .portfolio-container {
   padding-top: 96px;
   padding-bottom: 120px;
-  }
+}
 
 .main-container-project {
   display: flex;
@@ -467,4 +501,3 @@ button {
 .customer-icon {
   fill: currentColor;
 }
-
